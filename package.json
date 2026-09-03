@@ -1,0 +1,28 @@
+{
+  "name": "agent-comms-mcp",
+  "version": "1.0.0",
+  "description": "MCP server bridge for Agent Comms communicator",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "browser": "node browser-proxy.js",
+    "voice": "node voice-stream.js",
+    "build": "echo 'No build step needed'",
+    "install-browser": "npx playwright install chromium"
+  },
+  "dependencies": {
+    "@cartesia/cartesia-js": "^3.2.0",
+    "@modelcontextprotocol/sdk": "^1.12.1",
+    "@openai/agents": "^0.11.4",
+    "better-sqlite3": "^11.0.0",
+    "express": "^4.21.0",
+    "playwright": "^1.48.0",
+    "stripe": "^22.1.1",
+    "ws": "^8.18.0"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^7.6.0",
+    "@types/ws": "^8.5.0"
+  }
+}
